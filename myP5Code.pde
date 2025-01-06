@@ -4,7 +4,8 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var cometX = 20;
+var trail = 10;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -17,10 +18,16 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
+ 
+ fill(162, 0, 255);///comet trail code and color
+ rect(trail-10, 15, 30, 10);
+ 
+ 
+ rect(cometX, 15, 10, 10);
   
-  fireworkX = fireworkX + 1;
-
+   
+  cometX += 1;
+  trail += 1;
 }
 
 //🟡Extra FUN Features Ms. Hall Added
