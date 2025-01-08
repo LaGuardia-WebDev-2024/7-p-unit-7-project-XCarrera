@@ -6,6 +6,8 @@ void setup() {
 //🎯Variable Declarations Go Here
 var cometX = 20;
 var trail = 10;
+var moon = 30;
+
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -19,13 +21,24 @@ draw = function(){
   
   //🎯Animation Code Goes Here
  
- fill(162, 0, 255);///comet trail code and color
+ fill(194, 192, 196);///moon color and code
+ ellipse(326,123,moon,moon);
+ 
+ fill(150, 28, 6);///comet red trail code and color
  rect(trail-10, 15, 30, 10);
  
- 
- rect(cometX, 15, 10, 10);
-  
+ fill(196, 182, 161);///comet code and color
+ rect(cometX+10, 15, 10, 10);
    
+ fill(168, 85, 17);///comet orange trail code and color
+ rect(trail-10, 46, 30, 10);
+   
+ fill(196, 182, 161);///comet code and color
+ rect(cometX+6, 46, 10, 10);
+ 
+ 
+ 
+ 
   cometX += 1;
   trail += 1;
 }
