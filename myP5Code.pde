@@ -6,8 +6,8 @@ void setup() {
 //🎯Variable Declarations Go Here
 var cometX = 20;
 var trail = 10;
-var moon = 30;
-
+var sun = 30;
+var clouds = 40;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -21,14 +21,14 @@ draw = function(){
   
   //🎯Animation Code Goes Here
  
- fill(194, 192, 196);///moon color and code
- ellipse(326,123,moon,moon);
+ fill(252, 190, 3);///sun color and code
+ ellipse(190,198,sun+30,sun+30);
  
  fill(150, 28, 6);///comet red trail code and color
- rect(trail-10, 15, 30, 10);
+ rect(trail+70, 38, 30, 10);
  
  fill(196, 182, 161);///comet code and color
- rect(cometX+10, 15, 10, 10);
+ rect(cometX+80, 38, 10, 10);
    
  fill(168, 85, 17);///comet orange trail code and color
  rect(trail-10, 46, 30, 10);
@@ -36,11 +36,23 @@ draw = function(){
  fill(196, 182, 161);///comet code and color
  rect(cometX+6, 46, 10, 10);
  
+ fill(191, 174, 42);///yelllow orange trail code and color
+ rect(trail+126, 72, 30, 10);
+   
+ fill(196, 182, 161);///comet code and color
+ rect(cometX+135, 72, 10, 10);
  
+ fill(44, 158, 52);///yelllow orange trail code and color
+ rect(trail+75, 101, 30, 10);
+   
+ fill(196, 182, 161);///comet code and color
+ rect(cometX+86, 101, 10, 10);
+
  
- 
+  sun -= 2;
   cometX += 1;
   trail += 1;
+  
 }
 
 //🟡Extra FUN Features Ms. Hall Added
