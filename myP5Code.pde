@@ -9,7 +9,6 @@ void setup() {
 var cometX = 20;
 var trail = 10;
 var sun = 30;
-var clouds = 40;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
