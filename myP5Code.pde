@@ -1,6 +1,8 @@
 //🟢Setup Procedure - Runs Once to Set The Canvas
 void setup() {
     size(400, 400); 
+    
+    
 }
 
 //🎯Variable Declarations Go Here
@@ -22,7 +24,7 @@ draw = function(){
   //🎯Animation Code Goes Here
  
  fill(252, 190, 3);///sun color and code
- ellipse(190,198,sun+30,sun+30);
+ ellipse(190,203,sun+30,sun+30);
  
  fill(150, 28, 6);///comet red trail code and color
  rect(trail+70, 38, 30, 10);
@@ -52,6 +54,15 @@ draw = function(){
   sun -= 2;
   cometX += 1;
   trail += 1;
+  
+  if(sun<10){
+  sun = 30;
+  }
+  
+  
+  
+  
+  
   
 }
 
